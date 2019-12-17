@@ -1,0 +1,12 @@
+CREATE VIEW vooray_c.data AS
+
+select i.date, i.sku,  i.quantity_available, ifnull((select sum(quantity) from quantity_sold where sku = i.sku and date = i.date),0) as quantity_sold ,
+(select AVG(CAST(item_price AS DECIMAL(13,2))) from amz_price where sku = i.sku) as avg_prc
+from (select date, sum(quantity) as quantity_available, sku
+	from inv_level
+	where country = 'US' and detailed_disposition = 'SELLABLE'
+	group by date, sku) as i
+			left join quantity_sold as q
+			on i.date = q.date
+		group by i.date, i.sku
+		order by sku asc, date desc;
