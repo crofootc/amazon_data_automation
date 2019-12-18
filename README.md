@@ -1,4 +1,4 @@
-# Amazon_Data_Amazon
+# Amazon_Data_Automation
 
 This application was developed for Vooray in order to help automate their process of analyzing sales data. The process was tedious and consisted of downloading the necessary documents from Amazon and then taking the time to format them properly for analysis. The application automates this process by running a python script that will take the information from the csv and uploads it to a mySQL database. It does error and duplicate checking as well to make sure the data is accurate. 
 
