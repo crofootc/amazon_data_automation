@@ -5,11 +5,11 @@ This application was developed for Vooray in order to help automate their proces
 It is estimated that this application reduces the overall time it takes to prepare the data from about 2 hours to thirty minutes. Although the application takes thirty minutes (this varies depending on the size of the data) the time it takes an employee is seconds. As a result the time spent by employees on managing the data is reduced from about 2 hours to thirty seconds. 
 
 The repository consists of the following:
-*database files: these are the python scripts to setup the database and make any necessary alterations
-*documentation: extensive documentation is included about the technical aspects of the project
-*test_data: dummy data is provided to test the process
-*script_c.py: the application
-vooray_application.ipynb: jupyter notebook demonstrating the script.
+- database files: these are the python scripts to setup the database and make any necessary alterations
+- documentation: extensive documentation is included about the technical aspects of the project as well as overview presentation
+- test_data: dummy data is provided to test the process
+- script_c.py: the application
+- vooray_application.ipynb: jupyter notebook demonstrating the script.
 
 For more technical questions please refer to the commented code or the documentation.
 
