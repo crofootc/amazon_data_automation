@@ -11,7 +11,7 @@ import sys
 script = sys.argv[0]
 inv = sys.argv[1]
 prc = sys.argv[2]
-full_run = sys.argv[3]
+full_run = sys.argv[3].lower() == 'true'
 # inv = r'C:\Users\cdcro\Documents\USU\F2019\MIS 3300\MIS 5900-10\Experiment\Inventory_B.BN.RNVY_B.BN.RB.csv'
 # prc = r'C:\Users\cdcro\Documents\USU\F2019\MIS 3300\MIS 5900-10\Experiment\PRC_B.BN.RNVY_B.BN.RB.csv'
 # full_run = True
